@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:visible="true">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/nav_setting"
+            android:title="Setting"/>
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/nav_share"
+            android:title="Share"
+            android:onClick="share"/>
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_baseline_edit_location_24"
+            android:title="Contact us"
+            android:onClick="contact"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/nav_about"
+            android:title="About"
+            android:onClick="about"/>
+
+    </group>
+    <item android:title="Exit">
+
+        <menu>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/nav_exit"
+                android:title="Logout"
+                android:onClick="logout"/>
+        </menu>
+    </item>
+
+
+</menu>
